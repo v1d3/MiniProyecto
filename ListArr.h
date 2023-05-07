@@ -6,6 +6,8 @@ class ListArr: public ListArrADT{
 private:
     //Para nodos
     struct Node {
+    int countNode;
+    int b;
     int num_elements;
     int* array;
     Node* next;
@@ -16,7 +18,7 @@ private:
             next = nullptr;
         }
     ~Node() {
-        delete[] arr;
+        delete[] array;
     }
 };
     //Para nodos resumenes
@@ -27,11 +29,12 @@ private:
     NodeSummary* right_child;
 };
 
-Node* T;
+Node* Head;
+Node* Tail;
 int count;
 
 public:
-    ListArr();
+    ListArr(int b);
     ~ListArr();
     int size()=0;   
     void insert_left(int v)=0;  
