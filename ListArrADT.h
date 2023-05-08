@@ -1,6 +1,8 @@
 #ifndef ListArrADT_H
 #define ListArrADT_H
 
+#include <iostream>
+
 class ListArrADT{
 
     public:
