@@ -1,3 +1,4 @@
+#include "ListArrADT.h"
 #include "ListArr.h"
 
 ListArr::ListArr(int b){
@@ -7,6 +8,7 @@ ListArr::ListArr(int b){
     Head->b=b;
     Head->countNode = 0;
     count = 0;
+    NodeSummary Summary;
 }
 
 ListArr::~ListArr(){
@@ -75,7 +77,6 @@ void ListArr::insert_right(int v){
         }
     } 
 }
-
 
 int ListArr::size(){
     return this->count;
